@@ -66,7 +66,7 @@ echo
 echo "DNS server: $DNS"
 echo "Blocklists: $FOLDER"
 echo "Workers: $WORKERS"
-echo "Sort memory limit: 64 MB"
+echo "Sort memory limit: 512 MB"
 echo
 
 # STEP 1: Extract domains
@@ -117,9 +117,9 @@ if [[ ! -s "$TMP/raw" ]]; then
     exit 1
 fi
 
-echo "Sorting domains (64 MB sort memory)..."
+echo "Sorting domains (512 MB sort memory)..."
 
-LC_ALL=C sort -S 64M -T "$TMP" -u "$TMP/raw" > "$TMP/input" || {
+LC_ALL=C sort -S 512M -T "$TMP" -u "$TMP/raw" > "$TMP/input" || {
     echo "ERROR: Sorting failed."
     exit 1
 }
