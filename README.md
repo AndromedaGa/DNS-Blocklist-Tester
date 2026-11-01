@@ -1,10 +1,10 @@
 # DNS Blocklist Tester
 
-A simple Bash script to test domains from DNS blocklists and check whether they are blocked by your DNS server.
+A simple Bash script to test domains from DNS blocklists inside your Folder and check whether they are blocked by your DNS server.
 
 I created this script to test HaGeZi blocklists using my FRITZ!Box DNS server.
 
-### Pls change the DNS Server according to yours. 
+### Pls change the DNS Server according to yours.  currently it is set to 10.0.100.1
 
 ## Features
 
@@ -53,15 +53,6 @@ chmod +x test-blocklists.sh
 
 5. Enter the number of parallel workers when prompted.
 
-## DNS Server
-
-By default, the script uses:
-
-```bash
-10.0.100.1
-```
-
-Change this address in the script if you want to use a different DNS server.
 
 ## Results
 
