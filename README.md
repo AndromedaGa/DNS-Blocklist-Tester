@@ -4,7 +4,7 @@ A simple Bash script to test domains from DNS blocklists and check whether they 
 
 I created this script to test HaGeZi blocklists using my FRITZ!Box DNS server.
 
-###Pls change the DNS Server according to yours. 
+##Pls change the DNS Server according to yours. 
 
 ## Features
 
